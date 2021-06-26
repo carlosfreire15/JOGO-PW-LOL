@@ -1,0 +1,29 @@
+<!doctype html>
+<html lang="pt-br">
+	<head>
+		<title>Lux: Catando luz</title>
+		<meta charset="UTF-8">
+		<link href="../PROJETOMOSQUITO/css/estilo.css" rel="stylesheet">
+		<script src="../PROJETOMOSQUITO/js/lol.js"></script>
+			<script>
+				var lux = new Audio();
+				lux.src="sounds/lux.mp3";
+			</script> 
+		</head>     
+ <body onresize="ajustaPalco()" onmousedown="lux.play()">
+	<div class="painel">
+		<div class="vidas">	 
+			<img src="img/coracao_cheio.png" id="v1">
+		   <img src="img/coracao_cheio.png" id="v2">
+			<img src="img/coracao_cheio.png" id="v3">
+			<div class="cronometro">
+				Tempo restante: <span id="meuCronometro"></span>
+			</div>
+		</div>
+	</div>
+	<script>
+		document.getElementById('meuCronometro').innerHTML = tempo
+		var criaMosq = setInterval(function(){posRandomica()},2000);
+	</script>
+	</body>
+</html>
