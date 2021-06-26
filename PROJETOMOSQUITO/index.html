@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="pt-br">
+<head>
+	<title>Lux: Catando Luz</title>
+	<meta charset="utf-8">
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-+0n0xVW2eSR5OomGNYDnhzAbDsOXxcvSN1TPprVMTNDbiYZCxYbOOl7+AMvyTG2x" crossorigin="anonymous">
+	<link href="../PROJETOMOSQUITO/css/estilo2.css" rel="stylesheet">
+	<script>
+		function iniciarJogo(){
+			var acesso = (document.getElementById('nivel').value);
+			if(acesso == ""){
+				alert("SELECIONE UM NÍVEL!!!")
+			}
+			else{
+				window.location.href = "lol.html?" + acesso 
+			}
+		}
+	</script>
+</head>     
+ <body>
+	<div class="container">
+	
+		<div class="row1">
+			<div class="col">
+				<div class="d-flex justify-content-center">
+					<div class="mb-2">
+						<select class="form-control" id="nivel">
+							<option value="">Selecione o nível</option>
+							<option value="facil">FÁCIL</option>
+							<option value="medio">MÉDIO</option>
+							<option value="dificil">ULTRA MEGA POWER</option>
+						</select>
+					</div>
+				</div>
+			</div>
+		</div>
+	
+		<div class="row2">
+			<div class="col">
+				<div class="d-flex justify-content-center">
+					<button type="button" class="btn btn-dark btn-lg" onclick="iniciarJogo()">Iniciar Jogo</button>
+				</div>
+			</div>
+		</div>
+	</div>
+</body>
+</html>
