@@ -1,2 +1,8 @@
 # JOGO-PW-LOL
- jogo em js, html e CSS
+ jogo em js, html e CSS.
+ 
+ ALUNO: CARLOS EDUARDO MARTINS FREIRE
+ 
+ CC: PROGRAMAÇÃO WEB.
+
+ETEC PROF. BASILIDES DE GODOY - 2021 - 2 ETIM DS.
