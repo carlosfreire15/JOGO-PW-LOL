@@ -1,11 +1,21 @@
 var tempo = 10;
-
+var gerarTempo = 2000;
 var altura = 0;
 var largura = 0;
 var vidas = 1;
 
-window.location.href
-
+var vjNivel = window.location.search;
+ vjNivel = vjNivel.replace('?','');
+ 
+ if(vjNivel == "facil"){
+	 gerarTempo = 2000;
+ }
+ else if(vjNivel == "medio"){
+	 gerarTempo = 1500;
+ } else if(vjNivel == "dificil" ){
+	 gerarTempo = 500;
+ }
+ 
 function ajustaPalco(){
 	altura = window.innerHeight;
 	largura = window.innerWidth;

@@ -11,6 +11,7 @@
 			</script> 
 		</head>     
  <body onresize="ajustaPalco()" onmousedown="lux.play()">
+	<embed src="../sounds/elementalista.mp3" autostart="true" loop="true" width="0" height="0">
 	<div class="painel">
 		<div class="vidas">	 
 			<img src="img/coracao_cheio.png" id="v1">
@@ -23,7 +24,7 @@
 	</div>
 	<script>
 		document.getElementById('meuCronometro').innerHTML = tempo
-		var criaMosq = setInterval(function(){posRandomica()},2000);
+		var criaMosq = setInterval(function(){posRandomica()},gerarTempo);
 	</script>
 	</body>
 </html>
