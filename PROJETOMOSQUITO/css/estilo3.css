@@ -1,0 +1,10 @@
+Html{
+	cursor: url("../img/lol.png") 30 36, auto;
+}
+body{
+	background-image:url("../img/vitoria.png");
+	background-repeat:no-repeat;
+}
+.row{
+	padding-top: 430px;
+}
